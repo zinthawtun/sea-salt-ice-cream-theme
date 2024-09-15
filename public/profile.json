@@ -1,0 +1,11 @@
+{
+    "name" : "Sea-salt Ice-cream",
+    "title" : "Delicious Dessert",
+    "skills" : ["Sweet", "Salty", "Vanilla", "React"],
+    "bio" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas tincidunt nec nec libero dui. Nullam nec nunc nec libero tincidunt tincidunt. Nullam nec nunc nec libero tincidunt tincidunt. Ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas tincidunt nec nec libero dui. Nullam nec nunc nec libero tincidunt tincidunt. Nullam nec nunc nec libero tincidunt tincidunt.",
+    "socialMedia": {
+        "github": "https://github.com/zinthawtun/sea-salt-ice-cream-theme",
+        "twitter": "",
+        "linkedin": ""
+    }
+}
