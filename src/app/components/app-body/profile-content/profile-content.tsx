@@ -32,6 +32,7 @@ export default function ProfileContent() {
   };
   const { theme } = useThemeContext();
   const isSmallScreen = useMediaQuery("(max-width:1160px)");
+
   const [profileData, setProfileData] =
     useState<ProfileData>(initialProfileData);
 
