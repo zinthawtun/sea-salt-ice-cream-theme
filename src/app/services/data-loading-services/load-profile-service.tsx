@@ -11,7 +11,7 @@ export function LoadProfileService() {
     const fetchData = async () => {
       try {
         const response = await axios.get<ProfileData>(
-          "https://gist.githubusercontent.com/zinthawtun/13ced6340b63fc36ad8078c8c6ee1029/raw/de64d46686efe666d6d6390f849e78ae6f0e46b8/sea-salt-ice-cream-profile.json"
+          "https://gist.githubusercontent.com/zinthawtun/924b7beec19a547a6bf0792f36cd7159/raw/2b661a0ed08c24d283fe890ad3c33d822db6d7d8/sea-salt-ice-cream-theme-profile.json"
         );
         setData(response.data);
         setLoading(false);
