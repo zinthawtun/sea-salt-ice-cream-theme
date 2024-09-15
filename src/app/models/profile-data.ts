@@ -3,7 +3,7 @@ export interface ProfileData {
     bio: string;
     title: string;
     skills: string[];
-    socialMedia: SocialMedia;
+    socialMedia: SocialMedia
 }
 
 export interface SocialMedia{

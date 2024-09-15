@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
-import { useThemeContext } from '@/app/theme/theme-context';
-import { Typography } from '@mui/material';
+import { useEffect, useState } from "react";
+import { useThemeContext } from "@/app/theme/theme-context";
+import { Typography } from "@mui/material";
 
 interface ITitleProp {
   title: string;
 }
 
-export const Title = ({title}:ITitleProp) => {
+export const Title = ({ title }: ITitleProp) => {
   const { theme } = useThemeContext();
-  const [titleInfo, setTitleInfo] = useState<string>('');
+  const [titleInfo, setTitleInfo] = useState<string>("");
 
   useEffect(() => {
     setTitleInfo(titleInfo);
@@ -20,12 +20,11 @@ export const Title = ({title}:ITitleProp) => {
       sx={{
         color: theme.palette.primary.main,
         fontWeight: 600,
-        textAlign: 'center',
-        fontFamily: 'Algerian Sans',
+        textAlign: "center",
+        fontFamily: "Algerian Sans",
       }}
     >
-        {title}
+      {title}
     </Typography>
   );
 };
-

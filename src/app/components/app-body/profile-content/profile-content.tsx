@@ -6,7 +6,7 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid2";
 import { Container, Paper, useMediaQuery } from "@mui/material";
 
-import { ProfileData } from "@/app/models/profile-data";
+import { ProfileData, SocialMedia } from "@/app/models/profile-data";
 import { useThemeContext } from "@/app/theme/theme-context";
 
 import { ProfileAvatar } from "@/app/components/app-body/profile-content/avatar/Avatar";
@@ -18,23 +18,22 @@ import { Skills } from "@/app/components/app-body/profile-content/name-title-ski
 import { SocialMediaLinks } from "@/app/components/app-body/profile-content/social-media-links/social-media-links";
 
 export default function ProfileContent() {
+  const initialSocialMedia: SocialMedia = {
+    github: "",
+    linkedin: "",
+    twitter: "",
+  };
   const initialProfileData: ProfileData = {
     name: "",
     bio: "",
     title: "",
     skills: [],
-    socialMedia: {
-      github: "",
-      linkedin: "",
-      twitter: "",
-    },
+    socialMedia: initialSocialMedia,
   };
-
   const { theme } = useThemeContext();
   const isSmallScreen = useMediaQuery("(max-width:1160px)");
-  const [profileData, setProfileData] = useState<ProfileData | null>(
-    initialProfileData
-  );
+  const [profileData, setProfileData] =
+    useState<ProfileData>(initialProfileData);
 
   const { data, loading, error } = LoadProfileService();
 

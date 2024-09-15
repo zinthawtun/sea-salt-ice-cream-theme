@@ -12,13 +12,13 @@ export default function FooterBar() {
           color="black"
           sx={{ textAlign: "left", paragraph: "false" }}
         >
-          Profile V2.0
+          Version: V0.1
         </Typography>
         <Typography
           color="black"
           sx={{ textAlign: "center", paragraph: "false" }}
         >
-          Copyright © {new Date().getFullYear()} ZinThawTun.Dev
+          Created By ZinThawTun.Dev
         </Typography>
       </Box>
     </Container>

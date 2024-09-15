@@ -1,11 +1,17 @@
+import { useEffect, useState } from "react";
+
 import Grid from "@mui/material/Grid2";
 import { Box, IconButton, Stack } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn"; // Add this line
-import { useEffect, useState } from "react";
+import { SocialMedia } from "@/app/models/profile-data";
 
-export const SocialMediaLinks = ({github, twitter, linkedin}: {github: string, twitter: string, linkedin: string}) => {
+export const SocialMediaLinks = ({
+  github,
+  twitter,
+  linkedin,
+}: SocialMedia) => {
   const [socialMedia, setSocialMedia] = useState({ github, twitter, linkedin });
 
   useEffect(() => {
@@ -27,7 +33,7 @@ export const SocialMediaLinks = ({github, twitter, linkedin}: {github: string, t
         }}
       >
         <Stack spacing={3} direction="row" alignContent={"left"}>
-            <IconButton
+          <IconButton
             target="_blank"
             rel="noopener noreferrer"
             href={github}
@@ -35,9 +41,9 @@ export const SocialMediaLinks = ({github, twitter, linkedin}: {github: string, t
             title="GitHub"
             size="large"
             sx={{ boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.25)" }}
-            >
+          >
             <GitHubIcon fontSize="large" />
-            </IconButton>
+          </IconButton>
           <IconButton
             target="_blank"
             rel="noopener noreferrer"
