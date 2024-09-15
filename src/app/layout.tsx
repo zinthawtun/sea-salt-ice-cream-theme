@@ -5,7 +5,7 @@ import "./styles/globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Seasalt-Icecream",
+  title: "Sea-salt Ice-cream Theme",
   description: "Created By ZinThawTun",
 };
 
